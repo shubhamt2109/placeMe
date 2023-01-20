@@ -1,0 +1,205 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Admission</title>
+<!--	tab icon-->
+	<link rel="icon" href="favicon.ico?v=2">
+<!--	library-->
+<link rel="stylesheet" href="bootstrap.min.css"/>
+<!--CSS-->
+<link rel="stylesheet" href="placeMe_Css.css"/>
+<!--	Icons Font awesome and uicons--> 
+<script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script> 
+<script src="https://kit.fontawesome.com/df3efcb036.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="uicons-regular-rounded.css"/>
+
+<!--	Google fonts --> 
+<!--
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+-->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;600;700;900&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+
+<!--CSS-->
+
+<style>
+
+.nav-1 {
+    padding-bottom: 3rem;
+}
+
+.nav-link {
+    color: #893CE8;
+    border-radius: 10rem;
+}
+.nav-link[aria-current="page"] {
+    color: black;
+    background-color: gold;
+}
+.cards {
+    margin: 1rem 20rem;
+    font-family: Ubuntu;
+    width: 52%;
+}
+.arrow {
+    width: 21rem;
+}
+.cards p {
+    font-size: 1.2rem;
+    color: black;
+}
+.form-select {
+    width: 100%;
+}
+
+.nav-link:hover {
+    color: black;
+}
+
+</style>
+	
+	<!--	JQUERY SCRIPTS-->
+<!--	1. jquery for dropdown button-->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<!--	2. bootstrap bundle js for dropdown button-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+<!--	3. jquery js for navbar toggle-->
+	<script src="jquery-3.3.1.js"></script>
+<!--	4. bootstrap js for nav toggle-->
+	<script src="bootstrap.min.js"></script>
+</head>
+
+<body>
+<section id="header">
+  <div class="container-fluid">
+     <nav class="navbar navbar-expand-lg navbar-dark bg-transparent"> <a class="navbar-brand" href="user_index.html"><i class="fa fa-handshake"></i>&nbsp;&nbsp;&nbsp; placeMe</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbartogglermain"> <span><i class="fa-solid fa-caret-down"></i></span> </button>
+      <div class="collapse navbar-collapse" id="navbartogglermain">
+        <div class="navbar-nav ms-auto">
+          <a class="btn-group" style="text-decoration: none">
+              <button ID="dropdown_btn" class="btn btn-outline-light btn-lg dropdown-toggle" type="button" data-toggle="dropdown" data-target=".dropdown" aria-haspopup="true" aria-expanded="false">
+                  Hello,&nbsp;<i><label ID="user_label" Text="User">User</label></i>
+              </button>
+            <div class="dropdown dropdown-menu">
+                <a class="dropdown-item" href="user_index.html">Home</a>
+                <a class="dropdown-item" href="user_profile.html">My Profile</a>
+                <a class="dropdown-item" href="reset password.html">Change Password</a>
+              <div class="dropdown-divider"></div>
+            
+                 <a class="dropdown-item" href="index.html"><button ID="logout_btn" class="btn btn-danger" style="width: 100%">Logout</button></a>
+          
+            </div>
+          </a>
+        </div>
+      </div>
+    </nav>
+    <!--			-->
+    <nav class="navbar navbar-dark bg-transparent mt-4 navbar-expand-lg pt-5" >
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbartogglersub"> <span class="navbar-toggler-icon"></span> </button>
+      <div class="collapse navbar-collapse" id="navbartogglersub">
+        <ul class="navbar-nav m-auto">
+          <li class="nav-item"> <a class="nav-link btn btn-light ps-4 pe-4 m-2" href="user_index.html">Home</a> </li>
+          <li class="nav-item"> <a class="nav-link btn btn-light  ps-4 pe-4 m-2" href="user enquiry.html">Enquiry</a> </li>
+          <li class="nav-item"> <a class="nav-link btn btn-light ps-4 pe-4 m-2" href="user admission.html">Admission</a> </li>
+          <li class="nav-item"> <a class="nav-link btn btn-light ps-4 pe-4 m-2" href="user courses.html">My Courses</a> </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="row">
+      <div class="cards col-1">
+        <div class="card bg-light ">
+          <div class="card-body pe-5">
+            <h4 class="card-title text-center text-dark fw-light" style="margin-top: 1rem;margin-left: 1rem;">Admission Form</h4>
+            <hr style="color: black; margin-left: 1rem">
+            <p class="card-text fw-light" align="right" style="font-size: 1rem"><span class="text-danger fw-bold">*</span>All fields are mandatory</p>
+            <p class="card-text fw-bold" style="margin-top: 0.5rem;margin-left: 1rem;">Email Id :</p>
+            <div class="input-group ms-3"> <span class="input-group-text"><i class="fa-solid fa-user"></i></span>
+              <input class="form-control" type="email" placeholder="e.g abc@gmail.com" style="font-size: 1.2rem;">
+            </div>
+            <p class="card-text fw-bold" style="margin-top: 2rem;margin-left: 1rem;">Mobile No :</p>
+            <div class="input-group ms-3"> <span class="input-group-text"><i class="fa-solid fa-phone"></i></span>
+              <input class="form-control" type="tel" placeholder="e.g 9898989898" style="font-size: 1.2rem;">
+            </div>
+           
+            <p class="card-text fw-bold" style="margin-top: 2rem;margin-left: 1rem;">Program You Want to Purchase :</p>
+            <select class="form-select form-select-lg ms-3 pe-3" style="margin-bottom: 3rem;">
+              <option selected disabled>Select Program</option>
+              <option value="1">Talent Mapping</option>
+              <option value="2">Recruiter Training Programmes</option>
+              <option value="3">Interim Management</option>
+              <option value="4">Senior & Middle Level Hiring</option>
+            </select>
+            <a href="user payment gateway.html">
+            <button type="button" class="btn btn-success btn-lg" style="margin-left: 13rem;margin-bottom: 2rem;">Proceed to Payment</button>
+            </a> </div>
+        </div>
+      </div>
+    </div>
+    
+    <!--			--> 
+  </div>
+</section>
+
+<!--	Footer -->
+
+<section id="footer" class="bg-light">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="footer-items col-lg-3">
+        <h3 class="footer-head">About Us</h3>
+        <h6><a class="footer_link" href="#">Why placeMe ?</a></h6>
+        <h6><a class="footer_link" href="#">Careers</a></h6>
+        <h6><a class="footer_link" href="#">Media</a></h6>
+        <h6><a class="footer_link" href="#">Life at placeMe</a></h6>
+        <h6><a class="footer_link" href="#">Leadership Team</a></h6>
+      </div>
+      <div class="footer-items col-lg-3">
+        <h3 class="footer-head">Services</h3>
+        <h6><a class="footer_link" href="#">Talent Mapping</a></h6>
+        <h6><a class="footer_link" href="#">Recruiter Training Programmes</a></h6>
+        <h6><a class="footer_link" href="#">Interim Management</a></h6>
+        <h6><a class="footer_link" href="#">Companies</a></h6>
+        <h6><a class="footer_link" href="#">Senior & Middle Level Hiring</a></h6>
+      </div>
+      <div class="footer-items col-lg-3">
+        <h3 class="footer-head">Industry Practices</h3>
+        <h6><a class="footer_link" href="#">Industry Overview</a></h6>
+        <h6><a class="footer_link" href="#">Development</a></h6>
+        <h6><a class="footer_link" href="#">Education</a></h6>
+        <h6><a class="footer_link" href="#">Infrastructure</a></h6>
+        <h6><a class="footer_link" href="#">Technology</a></h6>
+        <h6><a class="footer_link" href="#">Media & Entertainment</a></h6>
+      </div>
+      <div class="footer-items col-lg-3">
+        <h3 class="footer-head">Jobs</h3>
+        <h6><a class="footer_link" href="#">Job Search</a></h6>
+        <h6><a class="footer_link" href="#">Submit your CV</a></h6>
+        <h6><a class="footer_link" href="#">Recruitment Advertisments & Fraudulent Advice</a></h6>
+      </div>
+    </div>
+    <div class="follow-us col-lg-12 col-md-6 col-sm-1">
+      <h4 class="social-head" align="right">Follow Us On : <a class="social"><i class="fa-brands fa-instagram"></i></a> <a class="social"><i class="fa-brands fa-facebook"></i></a> <a class="social"><i class="fa-brands fa-twitter"></i></a> <a class="social"><i class="fa-brands fa-telegram"></i></a> </h4>
+    </div>
+    <div class="copyrights">
+      <h6>&#169;  Copyright 2022 @ <span class="fw-bold">placeMe</span> . Designed by :<span class="fw-bold"> Shubham Turalkar</span></h6>
+      <h6 align="right"> All Rights Reserved &#174;</h6>
+    </div>
+  </div>
+</section>
+
+<!--	Script library--> 
+<script language="javascript">
+	
+		document.querySelectorAll('.nav-link').forEach
+		(link => {
+			if(link.href === window.location.href)
+			{
+				link.setAttribute('aria-current','page')
+			}
+		})
+	</script> 
+<script src="bootstrap.min.js"></script> 
+<script src="jquery-3.3.1.js"></script>
+</body>
+</html>

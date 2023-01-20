@@ -1,0 +1,163 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Sign Up</title>
+<!--	tab icon-->
+<link rel="icon" href="favicon.ico?v=2">
+<!--	library-->
+<link rel="stylesheet" href="bootstrap.min.css"/>
+<!--CSS-->
+<link rel="stylesheet" href="placeMe_Css.css"/>
+<!--	Icons Font awesome and uicons--> 
+<script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script> 
+<script src="https://kit.fontawesome.com/df3efcb036.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="uicons-regular-rounded.css"/>
+
+<!--	Google fonts --> 
+<!--
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+-->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;600;700;900&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+
+<!--CSS-->
+
+<style>
+.card-img {
+    max-width: 5rem;
+    margin-top: 1rem;
+}
+.card-title {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: #893CE8;
+}
+.card-subtitle {
+    color: black;
+}
+.input-group {
+    width: 100%;
+}
+.card {
+    width: 32rem;
+    color: black;
+    box-shadow: -0.5px 0.5px 50px 2px darkslategray;
+}
+.cards {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+.login-btn {
+    border-radius: 1rem;
+    box-shadow: 5px 5px 0px 0px green;
+}
+.logo {
+    font-size: 2rem;
+}
+</style>
+</head>
+
+<body>
+<section id="header">
+  <div class="container-fluid"> <a class="navbar-brand" href="index.html">
+    <div align="center"> <i class="fa fa-handshake"></i>&nbsp;&nbsp;&nbsp; placeMe </div>
+    </a>
+    <div class="row ">
+      <div class="cards col d-flex" style="justify-content: center" >
+        <div class="card" >
+          <div class="card-body">
+            <div class="d-flex justify-content-center"><img class="card-img"  src="user-img.png"></div>
+            <h2 class="card-title" align="center">New User</h2>
+            <h5 class="card-subtitle mb-2">Your Name</h5>
+            <div class="d-flex">
+              <div class="input-group me-5" style="width:45%"> <span class="input-group-text"><i class="fa-solid fa-f"></i></span>
+                <input class="form-control" type="text" placeholder="First Name" style="font-size: 1.2rem;">
+              </div>
+              <div class="input-group" style="width:45%"> <span class="input-group-text"><i class="fa-solid fa-l"></i></span>
+                <input class="form-control" type="text" placeholder="Last Name" style="font-size: 1.2rem;">
+              </div>
+            </div>
+            <h5 class="card-subtitle mb-2 mt-4">Your Email</h5>
+            <div class="input-group"> <span class="input-group-text"><i class="fa-solid fa-envelope"></i></span>
+              <input class="form-control" type="email" placeholder="e.g abc@gmail.com" style="font-size: 1.2rem;">
+            </div>
+            <h5 class="card-subtitle mt-4 mb-2">Your Password</h5>
+            <div class="input-group"> <span class="input-group-text"><i class="fa-solid fa-lock"></i></span>
+              <input class="form-control" type="password" placeholder="e.g Abc@123" style="font-size: 1.2rem;">
+            </div>
+            <div class="d-grid mt-5"  align="center"> <a href="#">
+              <button  type="button" class="login-btn btn btn-success btn-lg btn-block"> <i class="fa-solid fa-right-to-bracket"></i>&nbsp;&nbsp;Sign Up </button>
+              </a> </div>
+            <h5 class="card-subtitle mt-4 mb-2 text-muted" align="center">OR</h5>
+            <div class="logo d-flex justify-content-evenly"> <a href="#">
+              <div><i class="fa-brands fa-google"></i></div>
+              </a> <a href="#">
+              <div><i class="fa-brands fa-facebook"></i></div>
+              </a> <a href="#">
+              <div><i class="fa-brands fa-twitter"></i></div>
+              </a> </div>
+            <div class="d-flex flex-row justify-content-center mt-3">
+              <div>
+                <h6>Already a member ? <span><a class="sign-up" href="login.html">Log In</a></span> </h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--	Footer -->
+
+<section id="footer" class="bg-light">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="footer-items col-lg-3">
+        <h3 class="footer-head">About Us</h3>
+        <h6><a class="footer_link" href="#">Why placeMe ?</a></h6>
+        <h6><a class="footer_link" href="#">Careers</a></h6>
+        <h6><a class="footer_link" href="#">Media</a></h6>
+        <h6><a class="footer_link" href="#">Life at placeMe</a></h6>
+        <h6><a class="footer_link" href="#">Leadership Team</a></h6>
+      </div>
+      <div class="footer-items col-lg-3">
+        <h3 class="footer-head">Services</h3>
+        <h6><a class="footer_link" href="#">Talent Mapping</a></h6>
+        <h6><a class="footer_link" href="#">Recruiter Training Programmes</a></h6>
+        <h6><a class="footer_link" href="#">Interim Management</a></h6>
+        <h6><a class="footer_link" href="#">Companies</a></h6>
+        <h6><a class="footer_link" href="#">Senior & Middle Level Hiring</a></h6>
+      </div>
+      <div class="footer-items col-lg-3">
+        <h3 class="footer-head">Industry Practices</h3>
+        <h6><a class="footer_link" href="#">Industry Overview</a></h6>
+        <h6><a class="footer_link" href="#">Development</a></h6>
+        <h6><a class="footer_link" href="#">Education</a></h6>
+        <h6><a class="footer_link" href="#">Infrastructure</a></h6>
+        <h6><a class="footer_link" href="#">Technology</a></h6>
+        <h6><a class="footer_link" href="#">Media & Entertainment</a></h6>
+      </div>
+      <div class="footer-items col-lg-3">
+        <h3 class="footer-head">Jobs</h3>
+        <h6><a class="footer_link" href="#">Job Search</a></h6>
+        <h6><a class="footer_link" href="#">Submit your CV</a></h6>
+        <h6><a class="footer_link" href="#">Recruitment Advertisments & Fraudulent Advice</a></h6>
+      </div>
+    </div>
+    <div class="follow-us col-lg-12 col-md-6 col-sm-1">
+      <h4 class="social-head" align="right">Follow Us On : <a class="social"><i class="fa-brands fa-instagram"></i></a> <a class="social"><i class="fa-brands fa-facebook"></i></a> <a class="social"><i class="fa-brands fa-twitter"></i></a> <a class="social"><i class="fa-brands fa-telegram"></i></a> </h4>
+    </div>
+    <div class="copyrights">
+      <h6>&#169;  Copyright 2022 @ <span class="fw-bold">placeMe</span> . Designed by :<span class="fw-bold"> Shubham Turalkar</span></h6>
+      <h6 align="right"> All Rights Reserved &#174;</h6>
+    </div>
+  </div>
+</section>
+
+<!--	Script library--> 
+<script src="bootstrap.min.js"></script> 
+<script src="jquery-3.3.1.js"></script>
+</body>
+</html>

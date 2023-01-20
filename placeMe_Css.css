@@ -1,0 +1,192 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+  font-family: Montserrat;
+}
+.container-fluid {
+  padding: 3% 15%;
+}
+.navbar {
+  /*			margin: 10px;*/
+  padding-bottom: 2rem;
+}
+.navbar-brand {
+  font-family: Ubuntu;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.nav-link[aria-current="page"] {
+  color: white;
+  text-shadow: 2px 2px 5px white;
+}
+#header, #journey {
+  background-color: #893CE8;
+  color: white;
+}
+li {
+  font-family: ubuntu medium;
+  padding: 0rem 1.2rem;
+  font-size: 1.2rem;
+}
+h1 {
+  font-family: Montserrat black;
+  font-size: 3rem;
+  line-height: 1.5;
+}
+h2, h3 {
+  line-height: 1.5;
+  letter-spacing: 0.1rem;
+}
+.sub-text {
+  padding-bottom: 2rem;
+}
+.mail-box {
+  font-family: Ubuntu;
+  width: 26rem;
+  border: none;
+}
+.submit-btn {
+  font-family: Ubuntu;
+  font-size: 1.4rem;
+}
+.comp-img img {
+  box-shadow: -0.5px 0.5px 15px 2px White;
+}
+.jrny-cont {
+  padding: 3% 15%;
+}
+.achievements {
+  padding-bottom: 3rem;
+  font-family: Ubuntu;
+  font-size: 2rem;
+}
+.ach {
+  border-right: 1px solid white;
+  text-align: center;
+}
+/*==================Contact Us==================*/
+.abt-img {
+  border-bottom-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+}
+.abt-txt {
+  padding-bottom: 2rem;
+}
+/*==================our services=======================*/
+.card-title, .card-text {
+  color: black;
+}
+.logo {
+  margin: 0rem 1rem;
+  width: auto;
+  height: auto;
+}
+.marquee {
+  width: auto;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+.marq-img {
+  display: flex;
+  width: 300%;
+  height: 7rem;
+  position: relative;
+  overflow: hidden;
+  animation: marquee 15s linear infinite;
+}
+.marq-img:hover {
+  animation-play-state: paused;
+}
+@keyframes marquee {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: -250%;
+  }
+}
+.cards {
+  margin: 1rem 0rem;
+}
+.avatar {
+  border: 0.3rem solid rgba(#fff, 0.3);
+  margin-top: -6rem;
+  margin-bottom: 1rem;
+  max-width: 9rem;
+}
+/*===============Contact us=========================*/
+.title {
+  padding-bottom: 4rem;
+}
+.logo {
+  font-size: 5rem;
+  color: #893CE8;
+}
+.card-foot {
+  background-color: #893CE8;
+}
+.extra-margin {
+  padding-bottom: 2.5rem;
+}
+#content-2 {
+  background-color: #893CE8;
+  color: white;
+}
+.map {
+  margin-top: 4rem;
+}
+.cards-contact:hover {
+  animation: shake 1s;
+}
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  40% {
+    transform: translateY(-1px) rotate(1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+/*==================Login=========================*/
+/*==================Footer===========================*/
+#footer {
+  color: black;
+}
+.footer-head {
+  color: #893CE8;
+  font-family: Ubuntu;
+  font-size: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #893CE8;
+}
+.footer-items {
+  /*			border-right: 1px solid #893CE8 ;*/
+}
+.footer_link {
+  color: darkslategrey;
+  text-decoration: none;
+  line-height: 1.5;
+}
+.social {
+  caret-color: auto;
+}
+.social-head {
+  color: #893CE8;
+  font-family: Ubuntu;
+  font-size: 1.2rem;
+}
+/*		Hover effects*/
+.nav-link:hover {
+  color: white;
+}
+.navbar-brand:hover {
+  text-shadow: -0.5px 0.5px 5px lightgray;
+}
+/*========================================contact========================*/

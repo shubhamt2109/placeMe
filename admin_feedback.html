@@ -1,0 +1,206 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>admin_feedback</title>
+<!--	tab icon-->
+<link rel="icon" href="favicon.ico?v=2">
+<!--	library-->
+<link rel="stylesheet" href="bootstrap.min.css"/>
+<!--CSS-->
+<link rel="stylesheet" href="placeMe_Css.css"/>
+<!--	Icons Font awesome and uicons--> 
+<script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script> 
+<script src="https://kit.fontawesome.com/df3efcb036.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="uicons-regular-rounded.css"/>
+
+<!--	Google fonts --> 
+<!--
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+-->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;600;700;900&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+
+<!--CSS-->
+
+<style>
+.adm-txt {
+    font-size: 1.2rem;
+    margin : -5rem auto;
+}
+.card {
+    color: black;
+    width: 80%;
+    height: 55%;
+    padding: 1rem;
+    margin: 2rem 1rem 2rem 4rem;
+    border-radius: 1rem;
+}
+.nav-link {
+    color: #893CE8;
+    border-radius: 0.5rem 10rem 10rem 0.5rem;
+}
+.nav-link[aria-current="page"] {
+    color: black;
+    background-color: gold;
+    transform: translateX(15%);
+}
+/*		Hover effects*/
+		
+.nav-link:hover {
+    color: black;
+    transform: translateX(15%);
+}
+</style>
+</head>
+
+<body>
+<section id="header">
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent"> <a class="navbar-brand" href="index.html"><i class="fa fa-handshake"></i>&nbsp;&nbsp;&nbsp; placeMe</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbartogglermain"> <span><i class="fa-solid fa-caret-down"></i></span> </button>
+      <div class="collapse navbar-collapse" id="navbartogglermain">
+        <div class="navbar-nav ms-auto">
+          <div class="nav-item" style="margin-top: 1rem;margin-right: 8rem;">
+            <h4 class="wlcm-txt">Welcome, Admin</h4>
+          </div>
+          <div class="nav-item mt-2"> <a href="index.html">
+            <button type="button" class="logout-btn btn btn-danger btn-lg" >Logout</button>
+            </a> </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <!--			-->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-2">
+        <nav class="navbar navbar-dark bg-transparent nav-2" > 
+          <!--      <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navtoggle"><span><i class="navbar-toggler-icon"></i></span></button>--> 
+          <!--		<div class="navbar-collapse col-xxl-2 col-xl-2 col-lg-2 col-md-6" id="navtoggle">-->
+          <ul class="navbar-nav ">
+            <li class="nav-item"> <a class="nav-link btn btn-light ps-4 pe-4" href="admin_index.html">Home</a> </li>
+            <li class="nav-item"> <a class="nav-link btn btn-light  ps-4 pe-4 mt-4" href="admin_admissions.html">Admissions</a> </li>
+            <li class="nav-item"> <a class="nav-link btn btn-light ps-4 pe-4 mt-4" href="admin_userdata.html">User Data</a> </li>
+            <li class="nav-item"> <a class="nav-link btn btn-light ps-4 pe-4 mt-4" href="admin_add_programs.html">Add Programs</a> </li>
+            <li class="nav-item"> <a class="nav-link btn btn-light ps-4 pe-4 mt-4" href="admin_feedback.html">FeedBacks</a> </li>
+            <li class="nav-item"> <a class="nav-link btn btn-light ps-4 pe-4 mt-4" href="admin_newsletter.html">NewsLetters</a> </li>
+          </ul>
+          <!--      </div>--> 
+        </nav>
+      </div>
+      <div class="adm-txt col-xxl-10 col-xl-10 col-lg-10 col-md-6 " align="center">
+        <h1 align="center">Admin Dashboard</h1>
+        <div class="card text-dark col-xxl-12 col-xl-12 col-lg-12 col-md-6" align="center">
+          <div class="card-body" >
+            <div class="card-title">
+              <h3>User FeedBack</h3>
+              <div class="table-data mt-5">
+                <table class="table table-bordered">
+                  <thead>
+                    <tr align="center">
+                      <th>Sr.No</th>
+                      <th>First Name</th>
+                      <th>Last Name</th>
+                      <th>Email Id</th>
+                      <th>Message</th>
+                    </tr>
+                  </thead>
+                  <tr style="height: 2rem;">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr  style="height: 2rem;">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr  style="height: 2rem;">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                </table>
+              </div>
+              <div class="card-footer bg-light mt-5">
+                <button class="btn btn-secondary">Fetch data</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--			--> 
+    
+  </div>
+</section>
+
+<!--	Footer -->
+
+<section id="footer" class="bg-light">
+  <div class="container-fluid foot-container">
+    <div class="row">
+      <div class="footer-items col-lg-3">
+        <h3 class="footer-head">About Us</h3>
+        <h6><a class="footer_link" href="#">Why placeMe ?</a></h6>
+        <h6><a class="footer_link" href="#">Careers</a></h6>
+        <h6><a class="footer_link" href="#">Media</a></h6>
+        <h6><a class="footer_link" href="#">Life at placeMe</a></h6>
+        <h6><a class="footer_link" href="#">Leadership Team</a></h6>
+      </div>
+      <div class="footer-items col-lg-3">
+        <h3 class="footer-head">Services</h3>
+        <h6><a class="footer_link" href="#">Talent Mapping</a></h6>
+        <h6><a class="footer_link" href="#">Recruiter Training Programmes</a></h6>
+        <h6><a class="footer_link" href="#">Interim Management</a></h6>
+        <h6><a class="footer_link" href="#">Companies</a></h6>
+        <h6><a class="footer_link" href="#">Senior & Middle Level Hiring</a></h6>
+      </div>
+      <div class="footer-items col-lg-3">
+        <h3 class="footer-head">Industry Practices</h3>
+        <h6><a class="footer_link" href="#">Industry Overview</a></h6>
+        <h6><a class="footer_link" href="#">Development</a></h6>
+        <h6><a class="footer_link" href="#">Education</a></h6>
+        <h6><a class="footer_link" href="#">Infrastructure</a></h6>
+        <h6><a class="footer_link" href="#">Technology</a></h6>
+        <h6><a class="footer_link" href="#">Media & Entertainment</a></h6>
+      </div>
+      <div class="footer-items col-lg-3">
+        <h3 class="footer-head">Jobs</h3>
+        <h6><a class="footer_link" href="#">Job Search</a></h6>
+        <h6><a class="footer_link" href="#">Submit your CV</a></h6>
+        <h6><a class="footer_link" href="#">Recruitment Advertisments & Fraudulent Advice</a></h6>
+      </div>
+    </div>
+    <div class="follow-us col-lg-12 col-md-6 col-sm-1">
+      <h4 class="social-head" align="right">Follow Us On : <a class="social"><i class="fa-brands fa-instagram"></i></a> <a class="social"><i class="fa-brands fa-facebook"></i></a> <a class="social"><i class="fa-brands fa-twitter"></i></a> <a class="social"><i class="fa-brands fa-telegram"></i></a> </h4>
+    </div>
+    <div class="copyrights">
+      <h6>&#169;  Copyright 2022 @ <span class="fw-bold">placeMe</span> . Designed by :<span class="fw-bold"> Shubham Turalkar</span></h6>
+      <h6 align="right"> All Rights Reserved &#174;</h6>
+    </div>
+  </div>
+</section>
+
+<!--	Script library--> 
+<script language="javascript">
+	
+		document.querySelectorAll('.nav-link').forEach
+		(link => {
+			if(link.href === window.location.href)
+			{
+				link.setAttribute('aria-current','page')
+			}
+		})
+	</script> 
+<script src="bootstrap.min.js"></script> 
+<script src="jquery-3.3.1.js"></script>
+</body>
+</html>
